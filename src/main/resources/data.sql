@@ -17,7 +17,7 @@ WHERE NOT EXISTS (SELECT 1
                  WHERE title='The Hobbit');
 
 INSERT INTO books (title, author, year, rating)
-SELECT 'The Little Prince', 'Antoine de Saint-Exupéry', 1943, 3
+SELECT 'The Little Prince', 'Antoine de Saint-Exupery', 1943, 3
 WHERE NOT EXISTS (SELECT 1 
                  FROM books 
                  WHERE title='The Little Prince');
